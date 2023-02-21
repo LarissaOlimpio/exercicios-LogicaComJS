@@ -12,14 +12,14 @@ button.addEventListener("click",()=>{
 })
 
 function calcDouble(number){
-    return number*2
+    return `O dobro de ${number} é ${number*2}`
 }
 function calcTriple(number){
-    return number*3
+    return `O triplo de ${number} é ${number*3}`
 }
 function squareRoot(number){
-    return (number**(1/2)).toFixed(2)
-    //Math.sqrt(number)
+    return `A raíz quadrada de ${number} é ${Math.sqrt(number).toFixed(2)} `
+    //ou = (number**(1/2)).toFixed(2)
 }
 function createElement(element){
     const li = document.createElement('li')

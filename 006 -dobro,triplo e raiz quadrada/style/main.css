@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#b1b1e9,#2c2cf8);
+    height: 100vh;
+    
+}
