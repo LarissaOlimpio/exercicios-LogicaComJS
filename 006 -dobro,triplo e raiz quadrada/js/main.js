@@ -3,8 +3,8 @@ const button = document.getElementById("button");
 const result = document.getElementById("result");
 const item = [];
 
-button.addEventListener("click",()=>{
-
+button.addEventListener("click",(e)=>{
+    e.preventDefault()
     createElement(calcDouble(input.value))
     createElement(calcTriple(input.value))
     createElement(squareRoot(input.value))

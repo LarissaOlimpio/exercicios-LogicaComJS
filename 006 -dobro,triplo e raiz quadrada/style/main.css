@@ -3,10 +3,45 @@
     padding: 0;
     
 }
-.section{
-    display: flex;
-    flex-direction: column;
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.main{
     background-image: linear-gradient(#b1b1e9,#2c2cf8);
     height: 100vh;
+    
+
+}
+.section{
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    max-width: 80%;
+    max-height: 20%;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    padding: 64px 64px;
+    box-shadow: 8px 8px 16px rgba(0,0,0, 0.08);
+    
+}
+.labelInput{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.input{
+    display: block;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+
+}
+.button{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    border: none;
+    background-color: #b1b1e9;
+    cursor: pointer;
     
 }
