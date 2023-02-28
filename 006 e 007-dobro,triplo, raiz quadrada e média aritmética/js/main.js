@@ -1,14 +1,17 @@
-const input = document.getElementById("input");
+let input = document.querySelector("#input");
 const button = document.getElementById("button");
 const result = document.getElementById("result");
 const item = [];
 
 button.addEventListener("click",(e)=>{
     e.preventDefault()
-    createElement(calcDouble(input.value))
-    createElement(calcTriple(input.value))
-    createElement(squareRoot(input.value))
 
+    let double = createElement(calcDouble(input.value))
+    let triple = createElement(calcTriple(input.value))
+    let squareR = createElement(squareRoot(input.value))
+
+    return(`${double} ${triple} ${squareR} `)
+    
 })
 
 function calcDouble(number){
@@ -19,8 +22,9 @@ function calcTriple(number){
 }
 function squareRoot(number){
     return `A raíz quadrada de ${number} é ${Math.sqrt(number).toFixed(2)} `
-    //ou = (number**(1/2)).toFixed(2)
+    //ou = (number**(1/2)).toFixed(2)  
 }
+
 function createElement(element){
     const li = document.createElement('li')
     li.innerHTML = element
@@ -33,3 +37,4 @@ function createElement(element){
     localStorage.setItem("item", JSON.stringify(item))
 
 }
+
